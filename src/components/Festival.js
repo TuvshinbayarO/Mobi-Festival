@@ -6,6 +6,7 @@ import Food from '../Assets/FOOD.png'
 import Warning from '../Assets/Warning.png'
 import Agenda from '../Assets/AGENDA.png'
 import Emergency from '../Assets/EMERGENCY.png'
+import Hrms from '../Assets/hrms.png'
 
 const Festival = () => {
 
@@ -21,7 +22,7 @@ const Festival = () => {
         Food,
         Agenda,
         Emergency,
-
+        Hrms,
     ];
 
     const Data = [
@@ -69,6 +70,7 @@ const Festival = () => {
             tag: '5',
             subTag : 'Тусламж',
             img: Emergency,
+            subImg: Hrms,
             title: 'Leadership digital',
             subTitle: 'Rometheme',
             location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
@@ -113,6 +115,7 @@ return (
                             </div>                
                         </div>
                         <img onClick={() => openImageViewer(idx)} alt='festival' className='py-5 px-2 cursor-pointer' src={item.img} />
+                        <img onClick={() => openImageViewer(idx)} alt='Festival' className='py-5 px-2 cursor-pointer' src={item.subImg} />
                     </div> 
                 )
             }) : Data.map((item, idx) => {

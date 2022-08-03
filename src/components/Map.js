@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Map = () => {
   return (
     <div className='flex flex-col justify-center items-center text-center w-full h-full pt-10 pb-10'>
