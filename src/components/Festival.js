@@ -70,22 +70,21 @@ const Festival = () => {
             tag: '5',
             subTag : 'Тусламж',
             img: Emergency,
-            subImg: Hrms,
+            title: 'Leadership digital',
+            subTitle: 'Rometheme',
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
+        },
+        {
+            id: 6,
+            tag: '5',
+            subTag : 'Тусламж',
+            img: Hrms,
             title: 'Leadership digital',
             subTitle: 'Rometheme',
             location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
             time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         }
-        // ,{
-        //     id: 6,
-        //     tag: '5',
-        //     subTag : 'Aug',
-        //     img: 'http://placeimg.com/800/1200/nature',
-        //     title: 'Leadership digital',
-        //     subTitle: 'Rometheme',
-        //     location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
-        //     time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
-        // }
     ]
 
     const openImageViewer = useCallback((index) => {
@@ -115,7 +114,6 @@ return (
                             </div>                
                         </div>
                         <img onClick={() => openImageViewer(idx)} alt='festival' className='py-5 px-2 cursor-pointer' src={item.img} />
-                        <img onClick={() => openImageViewer(idx)} alt='Festival' className='py-5 px-2 cursor-pointer' src={item.subImg} />
                     </div> 
                 )
             }) : Data.map((item, idx) => {
