@@ -105,7 +105,7 @@ return (
         <h1 className='text-red-500 text-4xl font-bold w-1/2 text-center'>Event <span className='text-white'></span></h1>
         {/* <p className='text-gray-400 pt-2 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
         {
-           showMore ? Data.map((item, idx) => {
+           Data.map((item, idx) => {
                 return(
                      <div key={idx} className='w-full flex flex-col justify-center items-center pt-14'>
                         <div className='bg-red-500 w-[80%] rounded-lg'>
@@ -116,19 +116,10 @@ return (
                         <img onClick={() => openImageViewer(idx)} alt='festival' className='py-5 px-2 cursor-pointer' src={item.img} />
                     </div> 
                 )
-            }) : Data.map((item, idx) => {
-                return idx <= 2 && <div key={idx} className='w-full flex flex-col justify-center items-center pt-14'>
-                <div className='bg-red-500 w-[80%] rounded-lg'>
-                    <div className='flex flex-col justify-center items-center text-white font-bold text-2xl'>
-                        <p>{item.subTag}</p>
-                    </div>                
-                </div>
-                <img onClick={() => openImageViewer(idx)} alt='Festival' className='py-5 px-2 cursor-pointer' src={item.img} />
-            </div>
-            })
+            }) 
         }
 
-        <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-5' onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+        {/* <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-5' onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> */}
 
         {isViewerOpen && (
             <ImageViewer
