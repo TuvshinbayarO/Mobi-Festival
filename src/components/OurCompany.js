@@ -26,7 +26,7 @@ const OurCompany = () => {
                 <h1 className='text-4xl text-white font-bold'>05</h1>
             </div>
         </div>
-        <h1 className='text-red-500 text-4xl font-bold pt-2 flex item justify-center items-center text-center pb-14'>Хамтрагч <span className='text-white'> байгууллага</span></h1>
+        <h1 className='text-red-500 text-3xl font-bold pt-2 flex item justify-center items-center text-center pb-14'>Хамтрагч <span className='text-white'> байгууллага</span></h1>
         <Slider {...settings}>
             <div className="flex justify-center items-center">
                 <div className="flex justify-between items-center px-2">
