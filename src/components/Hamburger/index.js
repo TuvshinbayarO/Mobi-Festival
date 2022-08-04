@@ -12,12 +12,24 @@ export default function Hamburger() {
 
   const menus = [
     {
-      text: "Food",
-      href: "#food",
+      text: "Intro",
+      href: "#intro",
     },
     {
-      text: "Undaa",
-      href: "#undaa",
+      text: "Zone",
+      href: "#zone",
+    },
+    {
+      text: "Event",
+      href: "#event",
+    },
+    {
+      text: "Artist",
+      href: "#artist",
+    },
+    {
+      text: "Location",
+      href: "#location",
     },
   ];
 

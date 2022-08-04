@@ -1,7 +1,7 @@
 import React from 'react'
 const Map = () => {
   return (
-    <div className='flex flex-col justify-center items-center text-center w-full h-full pt-10 pb-10'>
+    <div id='location' className='flex flex-col justify-center items-center text-center w-full h-full pt-10 pb-10'>
         <div className='rounded-full w-14 p-2 bg-pink-500 text-center flex justify-center items-center'>
             <h1 className='text-4xl text-white font-bold'>06</h1>
         </div>
