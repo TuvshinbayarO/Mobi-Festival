@@ -47,7 +47,7 @@ export default function Hamburger() {
         }`}
       >
         <Logo size={"120px"} />
-        <ul className="mt-10">
+        <ul onClick={() => handleShow(!show)} className="mt-10">
           {menus.map((i, idx) => {
             return <MenuItem item={i} />;
           })}
