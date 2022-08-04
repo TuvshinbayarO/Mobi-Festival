@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Artist from "./components/Artist";
 import Map from "./components/Map";
 import OurCompany from "./components/OurCompany";
+import Art from './Assets/Artboard.png'
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -66,6 +67,9 @@ function App() {
               </div>
             </div>
             <CountDown />
+            <div className="px-2 pb-14">
+              <img src={Art} />
+            </div>
             <Video />
             <Zone />
             <Festival />
