@@ -62,7 +62,7 @@ function App() {
                   Mobi Festival 2022
                 </h1>
                 <p className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                  Холбоочдын баяр
+                  Холбоочдын баярff
                 </p>
               </div>
             </div>
