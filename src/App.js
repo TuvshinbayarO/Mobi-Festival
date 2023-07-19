@@ -67,7 +67,7 @@ function App() {
               </div>
             </div>
             <CountDown />
-            <div className="px-2 pb-14">
+            <div className="px-2 pb-12">
               <img src={Art} />
             </div>
             <Video />
