@@ -15,6 +15,8 @@ import Art from './Assets/Artboard.png'
 function App() {
   const [loading, setLoading] = useState(false);
 
+// asdfsafasdf
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
