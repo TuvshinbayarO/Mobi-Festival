@@ -10,11 +10,7 @@ function App() {
   const [timerHours, setTimerHours] = useState('00')
   const [timerMinutes, setTimerMinutes] = useState('00')
   const [timerSeconds, setTimerSeconds] = useState('00')
-// asdfsfasdfsad
-
-
-
-
+  
   let interval = useRef()
 
   const startTimer = () => {
